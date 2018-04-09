@@ -6,16 +6,16 @@ body {
 .box {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100vh;
     width: 60%;
     position: relative;
-    /* border: 1px solid red; */
     margin: 0 auto;
     padding: 0;
 }
 .level {
     width: 200px;
+    margin: 0 10px;
 }
 .box h1 {
     align-self: flex-start;
@@ -36,7 +36,6 @@ body {
 .tomain {
     position: absolute;
     align-self: flex-start;
-    margin: 0 auto;
     top: 30%;
 
 }

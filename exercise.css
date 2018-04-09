@@ -17,3 +17,7 @@ pre {
 .form-control {
     width: 250px;
 }
+.btn {
+    width: 100px;
+    margin-right: 10px;
+}
