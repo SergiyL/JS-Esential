@@ -2,10 +2,10 @@
  * For i.e. input 32243 should returns 34223 */
 
 function reverse(val) {
-    var demo = document.getElementById("demo");
-    var num = parseInt(val);
+    const demo = document.getElementById("demo");
+    const num = parseInt(val);
     if(Number.isInteger(num)) {
-        var reversed = val.split('').reverse().join('');
+        const reversed = val.split('').reverse().join('');
         demo.innerHTML = "реверсом числа " + val + " є число " + reversed;
     } else {
         demo.innerHTML = "дане значення не є числом. уведіть коректні дані";
@@ -13,14 +13,14 @@ function reverse(val) {
 }
 
 function val(){
-    var val = document.getElementById("aa").value;
+    const val = document.getElementById("aa").value;
     return val;
 }
 
 //////////////////////////////////////////////////////////////////
 
 function reverse2(num) {
-    var reverse = num.toString().split('').reverse().join('');
+    const reverse = num.toString().split('').reverse().join('');
     return reverse;
 }
 

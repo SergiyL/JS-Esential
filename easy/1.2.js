@@ -2,15 +2,15 @@
  * For i.e. input [1,92,-5,25] should return {max:92, min:-5}. */
 
 function min_max(val) {
-    var val2 = val.split(' ');
+    const val2 = val.split(' ');
     var arr = [];
-    for(i of val2) {
+    for(let i of val2) {
         arr.push(parseInt(i));
     }
 
     var max = -Infinity;
     var min = Infinity;
-    for (i of arr) {
+    for (let i of arr) {
         if (min > i) {
             min = i;  
         }
@@ -18,12 +18,12 @@ function min_max(val) {
             max = i;
         }
     }
-    var demo = document.getElementById("demo");
+    const demo = document.getElementById("demo");
     demo.innerHTML = "max:" + max + ", min:" + min;
 }
 
 function val() {
-    var val = document.getElementById("aa").value;
+    const val = document.getElementById("aa").value;
     return val;
 }
 

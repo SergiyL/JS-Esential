@@ -11,9 +11,9 @@
     <body>
         <h4>Write a function that validates if postal code is Ukrainian or not.
         </h4>
-        <pre><code>
+        <pre style="font-size: 16px;"><code>
             function validation(num) {
-                var demo = document.getElementById("demo");
+                const demo = document.getElementById("demo");
                 if(Number.isInteger(parseInt(num)) && num.toString().length == 5) {
                     switch(true) {
                         case (parseInt(num.substring(0,2)) < 7):
@@ -35,18 +35,21 @@
             validation(num);
         </code></pre>
 
-        <form>
-            <div class="form-group">
-                <input style="width: 300px" type="text" class="form-control" id="aa" placeholder='Введіть поштовий індекс'>
-            </div>
-        </form>
-
-        <div class="buttons">
-            <button class="btn btn-success execute" type="button" onclick="validation(num())" >Виконати</button>
-            <form action="../super_hard.html">
-                <input class="btn btn-secondary back" type="submit" value="Назад" />
+        <div class="input-box">
+            <form>
+                <div class="form-group">
+                    <input style="width: 300px" type="text" class="form-control" id="aa" placeholder='Введіть поштовий індекс'>
+                </div>
             </form>
+
+            <div class="buttons">
+                <button class="btn btn-success execute" type="button" onclick="validation(num())" >Виконати</button>
+                <form action="../super_hard.html">
+                    <input class="btn btn-secondary back" type="submit" value="Назад" />
+                </form>
+            </div>
         </div>
+        
 
         <p id="demo"></p>
         

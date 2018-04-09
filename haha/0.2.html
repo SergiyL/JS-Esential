@@ -13,29 +13,32 @@
             a2 + b2 = c2</h4>
         <pre><code>
             function pythagor(a, b) {
-                var c = Math.pow(a, 2) + Math.pow(b, 2);
+                const c = Math.pow(a, 2) + Math.pow(b, 2);
                 return c;
             }
             
             pythagor(a, b);
             
         </code></pre>
-
-        <form >
-            <div class="form-group">
-                <input type="text" class="form-control" id="aa" placeholder='Введіть значення a'>
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" id="bb" placeholder='Введіть значення b'>
-            </div>
-        </form>
-
-        <div class="buttons">
-            <button class="btn btn-success execute" type="button" onclick="pythagor()" >Виконати</button>
-            <form action="../haha.html">
-                <input class="btn btn-secondary back" type="submit" value="Назад" />
+        
+        <div class="input-box">
+            <form >
+                <div class="form-group">
+                    <input type="text" class="form-control" id="aa" placeholder='Введіть значення a'>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="bb" placeholder='Введіть значення b'>
+                </div>
             </form>
+    
+            <div class="buttons">
+                <button class="btn btn-success execute" type="button" onclick="pythagor()" >Виконати</button>
+                <form action="../haha.html">
+                    <input class="btn btn-secondary back" type="submit" value="Назад" />
+                </form>
+            </div>
         </div>
+        
 
         <p id="demo"></p>
         

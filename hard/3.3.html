@@ -13,42 +13,47 @@
             For i.e. binarySearch(27, {from:0, to:100}), should print <br>
             at console log 50,25,38,31,28,27. 
         </h4>
-        <pre><code>
-                function validator(input) {
-                    var count = 0;
-                    var obj = {name: "Vasya", age: 20, iq: 80};
-                    var validkeys = Object.keys(obj);
-                    for (var i = 0; i <= input.length-1; i++) {
-                        if (validkeys.includes(input[i])) {
-                            count ++;
-                        } else {
-                            count --;
-                        }
-                    }
+        <pre style="font-size: 12px;"><code>
+            function binary(num, hundred) {
+                let start = 0;
+                let end = hundred.length-1;
+                let middle = 0;
                 
-                    if (count == input.length) {
-                        return true;
-                    } else {
-                        return false;
+                while (hundred[middle] != num) {
+                    middle = Math.floor((start + end) / 2);
+                    console.log(middle);
+            
+                    if (hundred[middle] > num) {
+                        end = middle-1;
+                    } else if (hundred[middle] < num) {
+                        start = middle+1;
                     }
                 }
-                
-                validator(name);
+            }
+            
+            function hundred() {
+                var arr = [];
+            
+                for (let i = 0; i <= 100; i++) {
+                    arr.push(i);
+                }
+                return arr;
+            }
+
+            binary(num, hudred);
         </code></pre>
 
-        <form>
-            <div class="form-group">
-                <input type="text" class="form-control" id="aa" placeholder='Введіть значення розділивши відступом'>
-            </div>
-        </form>
+        <div class="input-box">
 
-        <div class="buttons">
-            <button class="btn btn-success execute" type="button" onclick="recursion()" >Виконати</button>
-            <form action="../hard.html">
-                <input class="btn btn-secondary back" type="submit" value="Назад" />
-            </form>
+            <div class="buttons">
+                <button class="btn btn-success execute" type="button" onclick="binary()" >Виконати</button>
+                <form action="../hard.html">
+                    <input class="btn btn-secondary back" type="submit" value="Назад" />
+                </form>
         </div>
 
+        </div>
+        
         <p id="demo"></p>
         
         <script src="3.3.js"></script>

@@ -13,7 +13,7 @@
         </h4>
         <pre><code>
                 function fahrenheit(c) {
-                    var f = c * 1.8 + 32;
+                    const f = c * 1.8 + 32;
                     return f;
                 }
                 
@@ -21,19 +21,21 @@
             
         </code></pre>
 
-        <form>
-            <div class="form-group">
-                <input style="width:300px" type="text" class="form-control" id="aa" placeholder='Введіть значення в градусах Цельсія'>
-            </div>
-        </form>
-
-        <div class="buttons">
-            <button class="btn btn-success execute" type="button" onclick="fahrenheit()" >Виконати</button>
-            <form action="../haha.html">
-                <input class="btn btn-secondary back" type="submit" value="Назад" />
+        <div class="input-box">
+            <form>
+                <div class="form-group">
+                    <input style="width:300px" type="text" class="form-control" id="aa" placeholder='Введіть значення в градусах Цельсія'>
+                </div>
             </form>
+    
+            <div class="buttons">
+                <button class="btn btn-success execute" type="button" onclick="fahrenheit()" >Виконати</button>
+                <form action="../haha.html">
+                    <input class="btn btn-secondary back" type="submit" value="Назад" />
+                </form>
+            </div>
         </div>
-
+        
         <p id="demo"></p>
         
         <script src="0.3.js"></script>

@@ -4,17 +4,21 @@
 
 
 function recursion(num) {
+    var arr = [];
+    const demo = document.getElementById("demo");
     if (num != -1) {
-        var newP = document.createElement("P");
-        var t = document.createTextNode(num);
+        const newP = document.createElement("span");
+        const t = document.createTextNode(num);
         newP.appendChild(t);
         document.body.appendChild(newP)
+        // arr.push(num);
         recursion(num - 1);
     }
+    // demo.innerHTML = arr;
 }
 
 function num () {
-    var num = parseInt(document.getElementById("aa").value);
+    const num = parseInt(document.getElementById("aa").value);
     return num;
 }
 

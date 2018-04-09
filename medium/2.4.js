@@ -5,14 +5,14 @@
 
 function capitalizer(str) {
     var cap = str.charAt(0).toUpperCase();
-    for (var i = 1; i < str.length; i++) {
+    for (let i = 1; i < str.length; i++) {
         cap += str.charAt(i);
         if (str.charAt(i) === ' ') {
             cap += str.charAt(i+1).toUpperCase();
             i++;
         }
     }
-    var demo = document.getElementById("demo");
+    const demo = document.getElementById("demo");
     demo.innerHTML = cap;
 }
 
@@ -24,7 +24,7 @@ function str() {
 //////////////////////////////////////////////////////
 function capitalizer2(str) {
     var cap = str.charAt(0).toUpperCase();
-    for (var i = 1; i < str.length; i++) {
+    for (let i = 1; i < str.length; i++) {
         cap += str.charAt(i);
         if (str.charAt(i) === ' ') {
             cap += str.charAt(i+1).toUpperCase();

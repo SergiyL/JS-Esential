@@ -1,6 +1,9 @@
 h4, .execute, #demo, form, .radio, p {
     margin: 10px 30px;
 }
+span {
+    margin: 10px 10px 10px 30px;
+}
 
 .buttons * {
     display: inline-block;
@@ -20,4 +23,15 @@ pre {
 .btn {
     width: 100px;
     margin-right: 10px;
+}
+.input-box {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 150px;
+}
+pre {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 20px;
 }

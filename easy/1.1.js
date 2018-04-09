@@ -2,14 +2,14 @@
  * For i.e. input [1,5,23,4,2,5,6] should return [4,2,6]. */
 
 function pair_numbers(val) {
-    var arr = val.split(" ");
+    const arr = val.split(" ");
     var pair = [];
-    for(i of arr) {
+    for(let i of arr) {
         if(i%2 == 0) {
             pair.push(i);
         }
     }
-    var demo = document.getElementById("demo");
+    const demo = document.getElementById("demo");
     demo.innerHTML = "[" + pair + "]";
 }
 
@@ -22,7 +22,7 @@ function val() {
 
 function pair_numbers2(arr) {
     var pair = [];
-    for(i of arr) {
+    for(let i of arr) {
         if(i%2 == 0) {
             pair.push(i);
         }

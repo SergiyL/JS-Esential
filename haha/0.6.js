@@ -1,6 +1,6 @@
 function asterisks(num){
-    var asterisk = '';
-    for (var i = 1; i <= num; i++) {
+    let asterisk = '';
+    for (let i = 1; i <= num; i++) {
         asterisk += '*';
         var newP = document.createElement("P");
         var t = document.createTextNode(asterisk);
@@ -16,11 +16,11 @@ function num() {
 
 ///////////////////////////////////
 
-function asterisks(num){
+function asterisks2(num){
     var asterisk = '';
-    for (var i = 1; i <= num; i++) {
+    for (let i = 1; i <= num; i++) {
         asterisk += '*';
         console.log(asterisk);
     }
 }
-asterisks(5);
+asterisks2(5);

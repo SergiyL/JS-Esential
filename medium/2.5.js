@@ -4,18 +4,18 @@
 
 function not_repeat(str) {
     var duplicates = '';
-    for (var i = 0; i < str.length; i++) {
+    for (let i = 0; i < str.length; i++) {
         if (str.substring(i+1, str.length).includes(str.charAt(i)) || duplicates.includes(str.charAt(i))) {
             duplicates += str.charAt(i);
         } else {
-            var demo = document.getElementById("demo");
+            const demo = document.getElementById("demo");
             demo.innerHTML = "першим неповторюваним елементом стрічки " + str + " є " + str.charAt(i);
         }
     }
 }
 
 function str() {
-    var str = document.getElementById("aa").value;
+    const str = document.getElementById("aa").value;
     return str;
 }
 
@@ -23,7 +23,7 @@ function str() {
 
 function not_repeat2(str) {
     var duplicates = '';
-    for (var i = 0; i < str.length; i++) {
+    for (let i = 0; i < str.length; i++) {
         if (str.substring(i+1, str.length).includes(str.charAt(i)) || duplicates.includes(str.charAt(i))) {
             duplicates += str.charAt(i);
         } else {

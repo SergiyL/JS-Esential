@@ -15,7 +15,7 @@
         <pre><code>
             function average(arr) {
                 var summ = 0;
-                for (i of arr){
+                for (let i of arr){
                     summ += i;
                 }
                 return summ/arr.length;
@@ -23,20 +23,22 @@
             
             average(arr);
         </code></pre>
-
-        <form>
-            <div class="form-group">
-                <input style="width: 300px" type="text" class="form-control" id="aa" placeholder='Введіть масив чисел у форматі a b c'>
-            </div>
-        </form>
-
-        <div class="buttons">
-            <button class="btn btn-success execute" type="button" onclick="average(arr())" >Виконати</button>
-            <form action="../easy.html">
-                <input class="btn btn-secondary back" type="submit" value="Назад" />
+        <div class="input-box">
+            <form>
+                <div class="form-group">
+                    <input style="width: 300px" type="text" class="form-control" id="aa" placeholder='Введіть масив чисел у форматі a b c'>
+                </div>
             </form>
+    
+            <div class="buttons">
+                <button class="btn btn-success execute" type="button" onclick="average(arr())" >Виконати</button>
+                <form action="../easy.html">
+                    <input class="btn btn-secondary back" type="submit" value="Назад" />
+                </form>
+            </div>
+            
         </div>
-
+        
         <p id="demo"></p>
         
         <script src="1.3.js"></script>

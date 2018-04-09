@@ -3,13 +3,17 @@
  * at console log 50,25,38,31,28,27. */
 
 function binary(num, hundred) {
-    var start = 0;
-    var end = hundred.length-1;
-    var middle = 0;
+    let start = 0;
+    let end = hundred.length-1;
+    let middle = 0;
+    const demo = document.getElementById("demo");
+    let str = '';
     
     while (hundred[middle] != num) {
         middle = Math.floor((start + end) / 2);
         console.log(middle);
+        str += middle + ',';
+        
 
         if (hundred[middle] > num) {
             end = middle-1;
@@ -17,12 +21,13 @@ function binary(num, hundred) {
             start = middle+1;
         }
     }
+    demo.innerHTML = str.substring(0, str.length-1);
 }
 
 function hundred() {
     var arr = [];
 
-    for (var i = 0; i <= 100; i++) {
+    for (let i = 0; i <= 100; i++) {
         arr.push(i);
     }
     return arr;

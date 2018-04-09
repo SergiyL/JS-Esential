@@ -3,11 +3,11 @@
 
 function average(arr) {
     var summ = 0;
-    for (i of arr){
+    for (let i of arr){
         summ += parseInt(i);     
     }
     
-    var demo = document.getElementById("demo");
+    const demo = document.getElementById("demo");
     demo.innerHTML = "середнім арифметичним масиву чисел " + arr + " є число " + Math.round((summ/arr.length)*100)/100;
 }
 
@@ -18,7 +18,7 @@ function arr(){
 /////////////////////////////////////////
 function average2(arr) {
     var summ = 0;
-    for (i of arr){
+    for (let i of arr){
         summ += i;
     }
     return summ/arr.length;

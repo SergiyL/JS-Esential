@@ -17,7 +17,7 @@
         <pre><code>
             function capitalizer(str) {
                 var cap = str.charAt(0).toUpperCase();
-                for (var i = 1; i < str.length; i++) {
+                for (let i = 1; i < str.length; i++) {
                     cap += str.charAt(i);
                     if (str.charAt(i) === ' ') {
                         cap += str.charAt(i+1).toUpperCase();
@@ -30,18 +30,21 @@
             capitalizer(str);
         </code></pre>
 
-        <form>
-            <div class="form-group">
-                <input type="text" class="form-control" id="aa" placeholder='Введіть слово'>
-            </div>
-        </form>
-
-        <div class="buttons">
-            <button class="btn btn-success execute" type="button" onclick="capitalizer(str())" >Виконати</button>
-            <form action="../medium.html">
-                <input class="btn btn-secondary back" type="submit" value="Назад" />
+        <div class="input-box">
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="aa" placeholder='Введіть слово'>
+                </div>
             </form>
+
+            <div class="buttons">
+                <button class="btn btn-success execute" type="button" onclick="capitalizer(str())" >Виконати</button>
+                <form action="../medium.html">
+                    <input class="btn btn-secondary back" type="submit" value="Назад" />
+                </form>
+            </div>
         </div>
+        
 
         <p id="demo"></p>
         

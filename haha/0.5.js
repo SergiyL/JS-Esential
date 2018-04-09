@@ -1,15 +1,15 @@
 function converter() {
-    var quantity = document.getElementById("aa").value;
-    var radios = document.getElementsByName("optradio");
+    const quantity = document.getElementById("aa").value;
+    const radios = document.getElementsByName("optradio");
     var currency;
-    for (var i = 0; i < radios.length; i++) {
+    for (let i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
             currency = radios[i].value;
             break;
         }
     }
-    var rate = document.getElementById("bb").value;
-    var demo = document.getElementById("demo");
+    const rate = document.getElementById("bb").value;
+    const demo = document.getElementById("demo");
     if (currency === "usd") {
         demo.innerHTML = quantity + " доларів США коштують " + quantity*rate + " гривень";
     } else {

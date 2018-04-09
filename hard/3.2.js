@@ -6,17 +6,17 @@
  * "age" wasn't passed on object. */
 
 function validator() {
-    var keysarr = document.getElementById("aa").value.split(' ');
-    var input = document.getElementById("bb").value.split(' ');
+    const keysarr = document.getElementById("aa").value.split(' ');
+    const input = document.getElementById("bb").value.split(' ');
     var obj = {};
 
-    for (i of input) {
-        var n = i.indexOf(":");
-        var len = i.length;
+    for (let i of input) {
+        const n = i.indexOf(":");
+        const len = i.length;
         obj[i.substring(0, n)] = i.substring(n+1, len);
     }
     var count = 0;
-    var validkeys = Object.keys(obj);
+    const validkeys = Object.keys(obj);
     for (var i = 0; i <= keysarr.length-1; i++) {
         if (validkeys.includes(keysarr[i])) {
             count ++;
@@ -24,9 +24,9 @@ function validator() {
             count --;
         }
     }
-    console.log(count);
+    // console.log(count);
 
-    var demo = document.getElementById("demo");
+    const demo = document.getElementById("demo");
 
     if (count == keysarr.length) {
         demo.innerHTML = "дані валідні";
@@ -39,8 +39,8 @@ function validator() {
 
 function validator1(keysarr, input) {
     var count = 0;
-    var validkeys = Object.keys(input);
-    for (var i = 0; i <= keysarr.length-1; i++) {
+    const validkeys = Object.keys(input);
+    for (let i = 0; i <= keysarr.length-1; i++) {
         if (validkeys.includes(keysarr[i])) {
             count ++;
         } else {

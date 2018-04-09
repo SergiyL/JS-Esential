@@ -3,10 +3,10 @@
  * time random number from in a range 20 to 1. */
 
 function random() {
-    var min = parseInt(document.getElementById("aa").value);
-    var max = parseInt(document.getElementById("bb").value);
+    const min = parseInt(document.getElementById("aa").value);
+    const max = parseInt(document.getElementById("bb").value);
 
-    var demo = document.getElementById("demo");
+    const demo = document.getElementById("demo");
     demo.innerHTML = Math.floor((Math.random() * (max - min) + min))+1;
 }
 

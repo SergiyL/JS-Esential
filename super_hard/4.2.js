@@ -1,7 +1,7 @@
 /**Write a function that validates if postal code is Ukrainian or not. */
 
 function validation(num) {
-    var demo = document.getElementById("demo");
+    const demo = document.getElementById("demo");
     if(Number.isInteger(parseInt(num)) && num.toString().length == 5) {
         switch(true) {
             case (parseInt(num.substring(0,2)) < 7):
@@ -90,6 +90,6 @@ function validation(num) {
 }
 
 function num() {
-    var num = document.getElementById("aa").value;
+    const num = document.getElementById("aa").value;
     return num;
 }

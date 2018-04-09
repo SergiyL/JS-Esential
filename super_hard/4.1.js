@@ -3,13 +3,13 @@
  * [3223, 546, 455, 345, 234, 213, 122, 98, 84, 64, 23, 12, 9, 4, 1]. */
 
 function bubble(arr) {
-    var temp = 0;
-    var numbers = [];
-    for (var i of arr) {
+    let temp = 0;
+    let numbers = [];
+    for (let i of arr) {
         numbers.push(parseFloat(i));
     }
-    for (var i = 0; i < numbers.length; i++) {
-        for (var j = i+1; j < numbers.length; j++) {
+    for (let i = 0; i < numbers.length; i++) {
+        for (let j = i+1; j < numbers.length; j++) {
             if (numbers[i] > numbers[j]) {
                 temp = numbers[i];
                 numbers[i] = numbers[j];
@@ -18,13 +18,13 @@ function bubble(arr) {
         }
     }
 
-    var demo = document.getElementById("demo");
+    const demo = document.getElementById("demo");
     demo.innerHTML = numbers.reverse();
 
 }
 
 function arr() {
-    var arr = document.getElementById("aa").value.split(' ');
+    const arr = document.getElementById("aa").value.split(' ');
     return arr;
 }
 
@@ -32,8 +32,8 @@ function arr() {
 
 function bubble2(arr) {
     var temp = 0;
-    for (var i = 0; i < arr.length; i++) {
-        for (var j = i+1; j < arr.length; j++) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i+1; j < arr.length; j++) {
             if (arr[i] > arr[j]) {
                 temp = arr[i];
                 arr[i] = arr[j];

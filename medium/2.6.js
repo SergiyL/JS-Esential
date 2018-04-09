@@ -2,8 +2,8 @@
  * a number. Sample f(5) should return 120 */
 
 function factorial(num) {
-    var f = 1;
-    for (var i = 1; i <= num; i++ ) {
+    let f = 1;
+    for (let i = 1; i <= num; i++ ) {
         f *= i;
     }
     var demo = document.getElementById("demo");
@@ -11,13 +11,13 @@ function factorial(num) {
 }
 
 function num(){
-    var num = parseInt(document.getElementById("aa").value);
+    const num = parseInt(document.getElementById("aa").value);
     return num;
 }
 
 function factorial2(num) {
     var f = 1;
-    for (var i = 1; i <= num; i++ ) {
+    for (let i = 1; i <= num; i++ ) {
         f *= i;
     }
     console.log(f);

@@ -16,11 +16,11 @@
             {name:"Roman",surname:"Rodomansky"})should throw error since <br>
             "age" wasn't passed on object. 
         </h4>
-        <pre><code>
+        <pre style="font-size: 12px;"><code>
             function validator(keysarr, input) {
                 var count = 0;
-                var validkeys = Object.keys(input);
-                for (var i = 0; i <= keysarr.length-1; i++) {
+                const validkeys = Object.keys(input);
+                for (let i = 0; i <= keysarr.length-1; i++) {
                     if (validkeys.includes(keysarr[i])) {
                         count ++;
                     } else {
@@ -37,23 +37,27 @@
                 
            validator(keysarr, input);
         </code></pre>
-        <p>name age iq</p>
-        <p>name:vasya age:29 iq:80</p>
-        <form>
-            <div class="form-group">
-                <input style="width: 320px" type="text" class="form-control" id="aa" placeholder='Введіть ключі розділивши пробілом'>
-            </div>
-            <div class="form-group">
-                <input style="width: 320px" type="text" class="form-control" id="bb" placeholder='Введіть значення розділивши пробілом'>
-            </div>
-        </form>
 
-        <div class="buttons">
-            <button class="btn btn-success execute" type="button" onclick="validator()" >Виконати</button>
-            <form action="../hard.html">
-                <input class="btn btn-secondary back" type="submit" value="Назад" />
+        <div class="input-box">
+            <p>name age iq</p>
+            <p>name:vasya age:29 iq:80</p>
+            <form>
+                <div class="form-group">
+                    <input style="width: 320px" type="text" class="form-control" id="aa" placeholder='Введіть ключі розділивши пробілом'>
+                </div>
+                <div class="form-group">
+                    <input style="width: 320px" type="text" class="form-control" id="bb" placeholder='Введіть значення розділивши пробілом'>
+                </div>
             </form>
+
+            <div class="buttons">
+                <button class="btn btn-success execute" type="button" onclick="validator()" >Виконати</button>
+                <form action="../hard.html">
+                    <input class="btn btn-secondary back" type="submit" value="Назад" />
+                </form>
+            </div>
         </div>
+        
 
         <p id="demo"></p>
         

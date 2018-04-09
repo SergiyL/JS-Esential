@@ -23,29 +23,33 @@
             converter(currency, quantity, rate);
         </code></pre>
 
-        <p>Оберіть грошову одиницю</p>
+        
 
-        <div class="radio">
-            <label><input type="radio" name="optradio" value="usd" id="r1" checked>USD</label>
-            <label><input type="radio" name="optradio" value="uah" id="r1">UAH</label>
-        </div>
-
-        <form>
-            <div class="form-group">
-                <input type="text" class="form-control" id="aa" placeholder='Введіть суму'>
+        <div class="input-box">
+            <p>Оберіть грошову одиницю</p>
+            <div class="radio">
+                <label><input type="radio" name="optradio" value="usd" id="r1" checked>USD</label>
+                <label><input type="radio" name="optradio" value="uah" id="r1">UAH</label>
             </div>
-            <div class="form-group">
-                <input type="text" class="form-control" id="bb" placeholder='Введіть курс обміну'>
-            </div>
-        </form>
-
-        <div class="buttons">
-            <button class="btn btn-success execute" type="button" onclick="converter()" >Виконати</button>
-            <form action="../haha.html">
-                <input class="btn btn-secondary back" type="submit" value="Назад" />
+    
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="aa" placeholder='Введіть суму'>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="bb" placeholder='Введіть курс обміну'>
+                </div>
             </form>
+    
+            <div class="buttons">
+                <button class="btn btn-success execute" type="button" onclick="converter()" >Виконати</button>
+                <form action="../haha.html">
+                    <input class="btn btn-secondary back" type="submit" value="Назад" />
+                </form>
+            </div>
+    
         </div>
-
+        
         <p id="demo"></p>
         
         <script src="0.5.js"></script>

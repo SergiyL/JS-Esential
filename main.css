@@ -5,9 +5,9 @@ body {
 
 .box {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    height: 100vh;
+    height: 50vh;
     width: 60%;
     position: relative;
     margin: 0 auto;
@@ -15,7 +15,8 @@ body {
 }
 .level {
     width: 200px;
-    margin: 0 10px;
+    margin: 45vh 10px;
+    align-self: center;
 }
 .box h1 {
     align-self: flex-start;
@@ -32,10 +33,9 @@ body {
 
 .ex {
     width: 100px;
+    margin: 0 10px;
 }
 .tomain {
-    position: absolute;
-    align-self: flex-start;
-    top: 30%;
-
+    align-self: start;
+    margin: 30vh auto;
 }
