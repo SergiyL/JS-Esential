@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>2.5</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../exercise.css">
+    </head>
+    <body>
+        <h4>Write a JavaScript function to find the first not repeated <br>
+            character. For i.e. input 'abacddbec', should return 'e' 
+        </h4>
+        <pre><code>
+            function not_repeat(str) {
+                var duplicates = '';
+                for (var i = 0; i <= str.length-1; i++) {
+                    if (str.substring(i+1, str.length).includes(str.charAt(i)) || duplicates.includes(str.charAt(i))) {
+                        duplicates += str.charAt(i);
+                    } else {
+                        return str.charAt(i);
+                    }
+                }
+            }
+            
+            not_repeat(str);
+        </code></pre>
+
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" id="aa" placeholder='Введіть слово'>
+            </div>
+        </form>
+
+        <div class="buttons">
+            <button class="btn btn-success execute" type="button" onclick="not_repeat(str())" >Виконати</button>
+            <form action="../medium.html">
+                <input class="btn btn-secondary back" type="submit" value="Назад" />
+            </form>
+        </div>
+
+        <p id="demo"></p>
+        
+        <script src="2.5.js"></script>
+    </body>
+</html>

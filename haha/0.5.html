@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>0.5</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../exercise.css">
+    </head>
+    <body>
+        <h4>Build a function that do currency converter from USD to UAH, and reverse.<br>
+        </h4>
+        <pre><code>
+            function converter(currency, quantity, rate) {
+                if (currency = "USD") {
+                    return quantity*rate;
+                } else {
+                    return quantity/rate;
+                }
+            }
+
+            converter(currency, quantity, rate);
+        </code></pre>
+
+        <p>Оберіть грошову одиницю</p>
+
+        <div class="radio">
+            <label><input type="radio" name="optradio" value="usd" id="r1" checked>USD</label>
+            <label><input type="radio" name="optradio" value="uah" id="r1">UAH</label>
+        </div>
+
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" id="aa" placeholder='Введіть суму'>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="bb" placeholder='Введіть курс обміну'>
+            </div>
+        </form>
+
+        <div class="buttons">
+            <button class="btn btn-success execute" type="button" onclick="converter()" >Виконати</button>
+            <form action="../haha.html">
+                <input class="btn btn-secondary back" type="submit" value="Назад" />
+            </form>
+        </div>
+
+        <p id="demo"></p>
+        
+        <script src="0.5.js"></script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 60%;
+    position: relative;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    padding: 0;
+}
+.level {
+    width: 200px;
+}
+.box h1 {
+    align-self: flex-start;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 20vh;
+}
+
+.box div {
+    height: 100px;
+    width: 100px;
+    background: rebeccapurple;
+}
+
+.ex {
+    width: 100px;
+}
+.tomain {
+    position: absolute;
+    align-self: flex-start;
+    margin: 0 auto;
+    top: 30%;
+
+}

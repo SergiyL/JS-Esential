@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>4.2</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../exercise.css">
+    </head>
+    <body>
+        <h4>Write a function that validates if postal code is Ukrainian or not.
+        </h4>
+        <pre><code>
+            function validation(num) {
+                var demo = document.getElementById("demo");
+                if(Number.isInteger(parseInt(num)) && num.toString().length == 5) {
+                    switch(true) {
+                        case (parseInt(num.substring(0,2)) < 7):
+                            return num + " індекс міста Київ";
+                            break;
+                        case (parseInt(num.substring(0,2)) < 10):
+                            return num + " індекс регіону Київська область";
+                            break;
+                        case (parseInt(num.substring(0,2)) < 14):
+                            return num + " індекс регіону Житомирська область";
+                            break;
+                            ...
+                    }
+                } else {
+                    return "даний номер не відповідає критеріям українського поштового індексу";
+                }
+            }
+
+            validation(num);
+        </code></pre>
+
+        <form>
+            <div class="form-group">
+                <input style="width: 300px" type="text" class="form-control" id="aa" placeholder='Введіть поштовий індекс'>
+            </div>
+        </form>
+
+        <div class="buttons">
+            <button class="btn btn-success execute" type="button" onclick="validation(num())" >Виконати</button>
+            <form action="../super_hard.html">
+                <input class="btn btn-secondary back" type="submit" value="Назад" />
+            </form>
+        </div>
+
+        <p id="demo"></p>
+        
+        <script src="4.2.js"></script>
+    </body>
+</html>

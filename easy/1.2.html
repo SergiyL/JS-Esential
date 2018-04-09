@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>1.2</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../exercise.css">
+    </head>
+    <body>
+        <h4>Write a function that returns min and max numbers. <br>
+            For i.e. input [1,92,-5,25] should return {max:92, min:-5}
+        </h4>
+        <pre><code>
+            function min_max(arr) {
+                var max = -Infinity;
+                var min = Infinity;
+                for (i of arr) {
+                    if (min > i) {
+                        min = i;
+                    }
+                    if (max < i) {
+                        max = i;
+                    }
+                }
+                return "max:" + max + ", min:" + min;
+            }
+            
+            min_max(arr);
+        </code></pre>
+
+        <form>
+            <div class="form-group">
+                <input style="width: 300px" type="text" class="form-control" id="aa" placeholder='Введіть масив чисел у форматі a b c'>
+            </div>
+        </form>
+
+        <div class="buttons">
+            <button class="btn btn-success execute" type="button" onclick="min_max(val())" >Виконати</button>
+            <form action="../easy.html">
+                <input class="btn btn-secondary back" type="submit" value="Назад" />
+            </form>
+        </div>
+
+        <p id="demo"></p>
+        
+        <script src="1.2.js"></script>
+    </body>
+</html>

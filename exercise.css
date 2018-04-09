@@ -1,0 +1,19 @@
+h4, .execute, #demo, form, .radio, p {
+    margin: 10px 30px;
+}
+
+.buttons * {
+    display: inline-block;
+}
+
+
+pre {
+    color: red;
+}
+
+.form-group {
+    display: flex;
+}
+.form-control {
+    width: 250px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>3.4</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../exercise.css">
+    </head>
+    <body>
+        <h4>Write a JavaScript program to find duplicate values in a <br>
+            JavaScript array
+        </h4>
+        <pre><code>
+            function duplicate(arr) {
+                var duplicate = [];
+                for (var i = 0; i <= arr.length; i++) {
+                    var sl = arr.slice(i+1, arr.length);
+                    if (sl.includes(arr[i]) || duplicate.includes(arr[i])) {
+                        duplicate.push(arr[i])
+                    }
+                }
+                return duplicate;
+            }
+            
+            duplicate(arr);
+        </code></pre>
+
+        <form>
+            <div class="form-group">
+                <input style="width: 300px" type="text" class="form-control" id="aa" placeholder='Введіть масив чисел у форматі a b c'>
+            </div>
+        </form>
+
+        <div class="buttons">
+            <button class="btn btn-success execute" type="button" onclick="duplicate(arr())" >Виконати</button>
+            <form action="../hard.html">
+                <input class="btn btn-secondary back" type="submit" value="Назад" />
+            </form>
+        </div>
+
+        <p id="demo"></p>
+        
+        <script src="3.4.js"></script>
+    </body>
+</html>
