@@ -1,7 +1,8 @@
 /**Write a function that returns min and max numbers. 
  * For i.e. input [1,92,-5,25] should return {max:92, min:-5}. */
 
-function min_max(val) {
+function min_max() {
+    const val = document.getElementById("aa").value;
     const val2 = val.split(' ');
     var arr = [];
     for(let i of val2) {
@@ -20,11 +21,6 @@ function min_max(val) {
     }
     const demo = document.getElementById("demo");
     demo.innerHTML = "max:" + max + ", min:" + min;
-}
-
-function val() {
-    const val = document.getElementById("aa").value;
-    return val;
 }
 
 ///////////////////////////////////////////////////

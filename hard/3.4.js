@@ -1,7 +1,8 @@
 /** Write a JavaScript program to find duplicate values in a 
  * JavaScript array.*/
 
-function duplicate(arr){
+function duplicate(){
+    const arr = document.getElementById("aa").value.split(' ');
     var duplicates = [];
     for (var i = 0; i <= arr.length; i++) {
         var sl = arr.slice(i+1, arr.length);
@@ -14,10 +15,6 @@ function duplicate(arr){
     demo.innerHTML = duplicates;
 }
 
-function arr() {
-    var arr = document.getElementById("aa").value.split(' ');
-    return arr;
-}
 ///////////////////////////////////////////////////////////
 function duplicate2(arr) {
     var duplicate = [];

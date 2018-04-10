@@ -3,7 +3,8 @@
  * in upper case. For i.e. 'the quick brown fox' and respond 
  * with The Quick Brown Fox' */
 
-function capitalizer(str) {
+function capitalizer() {
+    const str = document.getElementById("aa").value;
     var cap = str.charAt(0).toUpperCase();
     for (let i = 1; i < str.length; i++) {
         cap += str.charAt(i);
@@ -16,10 +17,6 @@ function capitalizer(str) {
     demo.innerHTML = cap;
 }
 
-function str() {
-    var str = document.getElementById("aa").value;
-    return str;
-}
 
 //////////////////////////////////////////////////////
 function capitalizer2(str) {

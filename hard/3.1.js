@@ -11,10 +11,8 @@ function recursion(num) {
         const t = document.createTextNode(num);
         newP.appendChild(t);
         document.body.appendChild(newP)
-        // arr.push(num);
         recursion(num - 1);
     }
-    // demo.innerHTML = arr;
 }
 
 function num () {

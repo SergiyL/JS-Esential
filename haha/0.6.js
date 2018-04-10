@@ -1,4 +1,5 @@
-function asterisks(num){
+function asterisks(){
+    const num = document.getElementById("aa").value;
     let asterisk = '';
     for (let i = 1; i <= num; i++) {
         asterisk += '*';
@@ -7,11 +8,6 @@ function asterisks(num){
         newP.appendChild(t);
         document.body.appendChild(newP);
     }
-}
-
-function num() {
-    var num = document.getElementById("aa").value;
-    return parseInt(num);
 }
 
 ///////////////////////////////////

@@ -1,7 +1,8 @@
 /**Write a JavaScript program to calculate the factorial of 
  * a number. Sample f(5) should return 120 */
 
-function factorial(num) {
+function factorial() {
+    const num = parseInt(document.getElementById("aa").value);
     let f = 1;
     for (let i = 1; i <= num; i++ ) {
         f *= i;
@@ -10,10 +11,6 @@ function factorial(num) {
     demo.innerHTML = "факторіал числа " + num + " дорівнює " + f;
 }
 
-function num(){
-    const num = parseInt(document.getElementById("aa").value);
-    return num;
-}
 
 function factorial2(num) {
     var f = 1;

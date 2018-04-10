@@ -2,7 +2,8 @@
  * combinations of a string. For i.e. input dog, 
  * should respond with d,do,dog,o,og,g */
 
-function generator(str) {
+function generator() {
+    const str = document.getElementById("aa").value;
     var ccc = '';
     for (let i = 0; i < str.length; i++) {
         for (let j = i+1; j < str.length+1; j++){
@@ -17,10 +18,6 @@ function generator(str) {
     demo.innerHTML = ccc;
 }
 
-function str(){
-    const str = document.getElementById("aa").value;
-    return str;
-}
 
 ////////////////////////////////////////////////////////////////////////
 function generator2(str) {

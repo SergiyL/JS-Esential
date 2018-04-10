@@ -25,14 +25,20 @@ pre {
     margin-right: 10px;
 }
 .input-box {
-    /* position: fixed; */
-    bottom: 0;
+    
+    /* bottom: 0;
     width: 100%;
-    padding-bottom: 150px;
+    padding-bottom: 150px; */
 }
 pre {
     font-weight: 700;
     font-size: 18px;
     margin: 20px;
  
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

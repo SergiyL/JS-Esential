@@ -1,7 +1,8 @@
 /**Write a function that reverse a number. 
  * For i.e. input 32243 should returns 34223 */
 
-function reverse(val) {
+function reverse() {
+    const val = document.getElementById("aa").value;
     const demo = document.getElementById("demo");
     const num = parseInt(val);
     if(Number.isInteger(num)) {
@@ -12,10 +13,6 @@ function reverse(val) {
     }
 }
 
-function val(){
-    const val = document.getElementById("aa").value;
-    return val;
-}
 
 //////////////////////////////////////////////////////////////////
 
